@@ -1,4 +1,6 @@
-# vue3-ts
+# vue3-typescript-antd
+
+> 基于@vue/cli 4.5.9 搭建的vue3 + typescript + antd项目
 
 ## Project setup
 ```
