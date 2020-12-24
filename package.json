@@ -1,11 +1,17 @@
 {
-  "name": "vue3-ts",
+  "name": "vue3-ts-antd",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "deploy": "gh-pages -d dist"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -e $GIT_PARAMS"
+    }
   },
   "dependencies": {
     "core-js": "^3.6.5",
@@ -30,26 +36,22 @@
     "eslint-plugin-vue": "^7.0.0-0",
     "less": "^3.0.4",
     "less-loader": "^5.0.0",
+    "svg-sprite-loader": "^5.2.1",
     "typescript": "~3.9.3"
   },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
-    },
-    "extends": [
-      "plugin:vue/vue3-essential",
-      "eslint:recommended",
-      "@vue/typescript/recommended"
-    ],
-    "parserOptions": {
-      "ecmaVersion": 2020
-    },
-    "rules": {}
-  },
+  "eslintConfig": {},
   "browserslist": [
     "> 1%",
     "last 2 versions",
     "not dead"
+  ],
+  "keywords": [
+    "vue",
+    "ant-design-vue",
+    "vue3",
+    "ts",
+    "tsx",
+    "admin",
+    "typescript"
   ]
 }
